@@ -37,6 +37,10 @@ app.post('/forgotpassword', forgotpassword)
 
 app.post('/temp-pass', temppass)
 
+app.get("/", (req, res) =>
+  res.send(`Server Running successfully.....!`)
+);
+
 app.listen(process.env.PORT || 5000)
 
 //.....authenticate.....//
